@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/366e86972c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="page-container">
+    <div id="content-container">
+        <h1>Pomodoro Timer</h1>
+
+        <div class="controls" id="interval-container">
+            <div class="control-item">
+                <p> Study Time:</p>
+                <div class="controller">
+                    <i id="study-duration-down" class="fas fa-chevron-down icon"></i>
+                    <p id="study-duration"></p><i id="study-duration-up" class="fas fa-chevron-up icon"></i>
+                </div>
+            </div>
+            <div class="control-item">
+                <p> Short Break:</p>
+                <div class="controller">
+                    <i id="short-break-duration-down" class="fas fa-chevron-down icon"></i>
+                    <p id="short-break-duration"></p><i id="short-break-duration-up" class="fas fa-chevron-up icon"></i>
+                </div>
+            </div>
+            <div class="control-item">
+                <p>Long Break:</p>
+                <div class="controller">
+                    <i id="long-break-duration-down" class="fas fa-chevron-down icon"></i>
+                    <p id="long-break-duration"></p><i id="long-break-duration-up" class="fas fa-chevron-up icon"></i>
+                </div>
+            </div>
+        </div>
+        <div id="timer-container">
+            <div id="timer-label">Let's study!</div>
+            <div id="timer">00:00:00</div>
+        </div>
+        <div class="controls">
+            <div class="control-item btn" id="start-btn">Start</div>
+            <div class="control-item btn" id="pause-btn">Pause</div>
+            <div class="control-item btn" id="start-btn">Stop/Clear</div>
+        </div>
+        
+    </div>
+</div>
+    
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
