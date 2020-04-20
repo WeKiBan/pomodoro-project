@@ -1,31 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+input, select, textarea, button{font-size:inherit; font-family:inherit; color:inherit;}
 
-.header-footer{
-    height:200px;
-    margin:30px;
-    background-color:#5C9EAD;
-    width:100%
+input[type='number']::-webkit-inner-spin-button, 
+input[type='number']::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
 }
+
+body{
+    font-family: 'Comic Neue', cursive;
+    background-color: #395E66;
+    color: #FC814A;
+}
+#title{
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#title h1{
+    margin-top:20px;
+}
+
 #page-container{
-    background-color: #FFFFFF;
     display:flex;
     text-align: center;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: #FC814A;
     height:100vh;
     width:100%;
 }
 
 
 #content-container{
-    background-color: #FFFFFF;
+    background-color:#FFFFFF;
     display:flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #FC814A;
     height:80vh;
     width:90%;
     max-width: 700px;
@@ -66,13 +80,15 @@
 }
 .control-item{
     width:30%;
-    border:solid #FC814A ;
+    border:solid;
     border-radius:10px;
     padding-top: 5px;
     padding-bottom: 5px;
     transition: 0.3s;
     
 }
+
+
 
 .control-item:hover{
     background-color: #FC814A;
@@ -93,6 +109,7 @@
     padding: 8px 0px 8px 0px;
     border-radius: 10px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -103,11 +120,21 @@
     transition: 0.3s;
 }
 
-.icon{
-    transition: 0.3s;
+.durations{
+    width:40px;
+    text-align: center;
+    background-color: transparent;
+    border:none;
+  
 }
 
-.icon:hover{
+
+.arrows{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.arrows:hover{
     transform: scale(1.1);
     color:rgb(134, 134, 134);
     transition: 0.3s;
