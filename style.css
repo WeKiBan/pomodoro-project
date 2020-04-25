@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Sniglet&display=swap');
 input, select, textarea, button{font-size:inherit; font-family:inherit; color:inherit;}
 
 input[type='number']::-webkit-inner-spin-button, 
@@ -8,9 +8,19 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 body{
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Cabin', sans-serif;
     background-color: #395E66;
     color: #FC814A;
+}
+
+#page-container{
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width:100%;
 }
 #title{
     display:flex;
@@ -20,16 +30,10 @@ body{
 }
 #title h1{
     margin-top:20px;
-}
-
-#page-container{
-    display:flex;
-    text-align: center;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height:100vh;
-    width:100%;
+    padding:20px;
+    font-size: 35px;
+    color:white;
+    font-family: 'Sniglet', cursive;
 }
 
 
@@ -40,19 +44,13 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:80vh;
+    height:60vh;
     width:90%;
     max-width: 700px;
     min-width:300px;
-    min-height:600px;
+    min-height:400px;
     border-radius: 5px;
 }
-#page-container h1{
-    font-size: 30px;
-    padding-bottom: 20px;
-    display:hidden;
-}
-
 
 #timer-container{
     display:flex;
